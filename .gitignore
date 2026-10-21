@@ -1,0 +1,136 @@
+# ==============================================================================
+# AQUILA Monorepo Master .gitignore
+# Stack: ESP32 (PlatformIO) | Node.js | React (Vite) | PHP 8.2 (Composer) | Python
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. CREDENTIALS, SECRETS & ENVIRONMENT VARIABLES (CRITICAL)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.local
+*.pem
+*.key
+*.cert
+firebase_service_account.json
+**/config/firebase_service_account.json
+serviceAccountKey.json
+
+# ------------------------------------------------------------------------------
+# 2. PHP & COMPOSER (backend-api/)
+# ------------------------------------------------------------------------------
+vendor/
+**/vendor/
+composer.phar
+.phpunit.result.cache
+.php-cs-fixer.cache
+
+# ------------------------------------------------------------------------------
+# 3. NODE.JS & NPM (frontend-ui/, agent-engine/, simulation-harness/)
+# ------------------------------------------------------------------------------
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-store/
+
+# ------------------------------------------------------------------------------
+# 4. FRONTEND BUILD OUTPUTS & CACHES (frontend-ui/)
+# ------------------------------------------------------------------------------
+dist/
+**/dist/
+dist-ssr/
+build/
+.cache/
+.vite/
+.eslintcache
+
+# ------------------------------------------------------------------------------
+# 5. EMBEDDED & FIRMWARE (edge-firmware/ - PlatformIO & Arduino)
+# ------------------------------------------------------------------------------
+.pio/
+.pioenvs/
+.piolibdeps/
+.clangd/
+*.bin
+*.elf
+*.hex
+*.o
+*.a
+*.d
+sdkconfig.local
+spiffs_image.bin
+
+# ------------------------------------------------------------------------------
+# 6. PYTHON & MACHINE LEARNING (ml-research/)
+# ------------------------------------------------------------------------------
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+.ipynb_checkpoints/
+*.pkl
+*.joblib
+*.h5
+
+# ------------------------------------------------------------------------------
+# 7. FIREBASE & CLOUD CONFIG
+# ------------------------------------------------------------------------------
+.firebase/
+firebase-debug.log*
+firestore-debug.log*
+ui-debug.log*
+
+# ------------------------------------------------------------------------------
+# 8. LOGS, TEMP & RUNTIME DATA
+# ------------------------------------------------------------------------------
+*.log
+logs/
+*.tmp
+*.swp
+*.bak
+
+# ------------------------------------------------------------------------------
+# 9. IDE & CODE EDITOR ARTIFACTS
+# ------------------------------------------------------------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.vscode/.browse.c_cpp.db*
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ------------------------------------------------------------------------------
+# 10. OPERATING SYSTEM ARTIFACTS
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+EOF

@@ -1,0 +1,6353 @@
+{
+  "model_name": "AQUILA_RandomForest_Leak_Classifier",
+  "version": "2.3.0",
+  "n_estimators": 50,
+  "operating_threshold": 0.4,
+  "features": [
+    "flow_rate_lpm",
+    "rolling_mean_5m",
+    "effective_std",
+    "duration_minutes",
+    "hour_of_day"
+  ],
+  "trees": [
+    {
+      "type": "split",
+      "feature": 2,
+      "threshold": 0.1605,
+      "left": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 0.59,
+        "left": {
+          "type": "leaf",
+          "prob": 0.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.1325,
+          "left": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 3.955,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 10.165,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.675,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.8365
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 59.8,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 5.145,
+              "left": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 9.5,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.1053
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.8095
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.26,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.2593
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "leaf",
+        "prob": 0.0
+      }
+    },
+    {
+      "type": "split",
+      "feature": 3,
+      "threshold": 19.95,
+      "left": {
+        "type": "split",
+        "feature": 0,
+        "threshold": 10.48,
+        "left": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 10.75,
+          "left": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.1155,
+            "left": {
+              "type": "split",
+              "feature": 4,
+              "threshold": 3.5,
+              "left": {
+                "type": "leaf",
+                "prob": 0.0178
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 4.19,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 17.25,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.106,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.2857
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.145,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.6667
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 3.965,
+        "left": {
+          "type": "leaf",
+          "prob": 1.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 10.185,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 60.3,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 6.46,
+              "left": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 19.5,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.3152
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.465,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.4286
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0092
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 3,
+      "threshold": 19.85,
+      "left": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 10.29,
+        "left": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.144,
+          "left": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.0255,
+            "left": {
+              "type": "leaf",
+              "prob": 0.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 4.915,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.225,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.6087
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.2
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 0.0
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 3.965,
+        "left": {
+          "type": "leaf",
+          "prob": 1.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 10.185,
+          "left": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.0865,
+            "left": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 6.755,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 4.92,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.8738
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.9548
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 60.3,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.1585,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.1818
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 0,
+      "threshold": 0.595,
+      "left": {
+        "type": "leaf",
+        "prob": 0.0
+      },
+      "right": {
+        "type": "split",
+        "feature": 0,
+        "threshold": 10.28,
+        "left": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 19.75,
+          "left": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.1075,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 6.22,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 4.8,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.8421
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.3
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 4,
+              "threshold": 16.5,
+              "left": {
+                "type": "leaf",
+                "prob": 0.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.2095,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.2
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 3.995,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 4.06,
+              "left": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 7.5,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.9989
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.6667
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 60.3,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.65,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.3239
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 3,
+      "threshold": 19.55,
+      "left": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 10.265,
+        "left": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.153,
+          "left": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.0255,
+            "left": {
+              "type": "leaf",
+              "prob": 0.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 6.22,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 4.82,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.7407
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 0.0
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 3,
+        "threshold": 59.95,
+        "left": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 3.945,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 10.245,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 6.65,
+              "left": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 4.5,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.8929
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.33
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 0,
+      "threshold": 0.605,
+      "left": {
+        "type": "leaf",
+        "prob": 0.0
+      },
+      "right": {
+        "type": "split",
+        "feature": 3,
+        "threshold": 20.1,
+        "left": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 10.285,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 10.75,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.2045,
+              "left": {
+                "type": "leaf",
+                "prob": 0.5
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 4.08,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.115,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.1195
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0036
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 4.055,
+          "left": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 4.14,
+            "left": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 4.0,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.9412
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.5
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.1305,
+            "left": {
+              "type": "split",
+              "feature": 4,
+              "threshold": 4.5,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 10.165,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.6412
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 5.91,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.16,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.3636
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 2,
+      "threshold": 0.1375,
+      "left": {
+        "type": "split",
+        "feature": 0,
+        "threshold": 0.595,
+        "left": {
+          "type": "leaf",
+          "prob": 0.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 4.325,
+          "left": {
+            "type": "split",
+            "feature": 4,
+            "threshold": 7.5,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 50.65,
+              "left": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 8.5,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.8462
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 15.2,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 4,
+              "threshold": 4.5,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 10.11,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.6268
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 2.975,
+        "left": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.182,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 0.0
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 59.65,
+          "left": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.1585,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 5.045,
+              "left": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 9.5,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.875
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.1505,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0625
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 0.7143
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 0,
+      "threshold": 0.595,
+      "left": {
+        "type": "leaf",
+        "prob": 0.0
+      },
+      "right": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.1375,
+        "left": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.0885,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 59.75,
+            "left": {
+              "type": "split",
+              "feature": 4,
+              "threshold": 4.5,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 10.355,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.8716
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.132,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 15.2,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.1205,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.7966
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.9798
+                }
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 4.305,
+              "left": {
+                "type": "leaf",
+                "prob": 0.7273
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.2222
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 4.695,
+          "left": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.1605,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 3.91,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 4.735,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 12.1,
+              "left": {
+                "type": "leaf",
+                "prob": 0.0
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.75
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 4.985,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.1595,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.7333
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 5.935,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0394
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.003
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 3,
+      "threshold": 19.75,
+      "left": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 10.255,
+        "left": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 10.75,
+          "left": {
+            "type": "split",
+            "feature": 4,
+            "threshold": 2.5,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 10.15,
+              "left": {
+                "type": "leaf",
+                "prob": 0.0
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.3333
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 3.815,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.092,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 4.915,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.5833
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.145,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.25
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 3,
+        "threshold": 59.95,
+        "left": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 3.95,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 23.65,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 23.2,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.8571
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 10.115,
+            "left": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 6.68,
+              "left": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 4.5,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.9545
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.3021
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 1,
+      "threshold": 0.59,
+      "left": {
+        "type": "leaf",
+        "prob": 0.0
+      },
+      "right": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 10.23,
+        "left": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.0905,
+          "left": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 6.68,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 59.2,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 4.02,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.8322
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 60.2,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 28.9,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.1455,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.2051
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 3.735,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0463
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 1,
+      "threshold": 0.59,
+      "left": {
+        "type": "leaf",
+        "prob": 0.0
+      },
+      "right": {
+        "type": "split",
+        "feature": 0,
+        "threshold": 10.325,
+        "left": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 3.695,
+          "left": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 1.81,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 11.15,
+              "left": {
+                "type": "leaf",
+                "prob": 0.3333
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.182,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 6.665,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 60.3,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 4.815,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0993
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.1818
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 2,
+      "threshold": 0.1605,
+      "left": {
+        "type": "split",
+        "feature": 0,
+        "threshold": 0.595,
+        "left": {
+          "type": "leaf",
+          "prob": 0.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.1315,
+          "left": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 4.025,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 10.085,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.75,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.8319
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 5.975,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 59.75,
+              "left": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 9.5,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.1212
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.6667
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.1405,
+              "left": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 31.0,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.2
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "leaf",
+        "prob": 0.0
+      }
+    },
+    {
+      "type": "split",
+      "feature": 2,
+      "threshold": 0.132,
+      "left": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.025,
+        "left": {
+          "type": "leaf",
+          "prob": 0.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 3.955,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 10.165,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 6.51,
+              "left": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 60.25,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.696
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.675,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.3333
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.1605,
+        "left": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 3.85,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 5.925,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 66.45,
+              "left": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 41.05,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.2941
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 6.26,
+              "left": {
+                "type": "leaf",
+                "prob": 0.25
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 0.0
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 2,
+      "threshold": 0.1325,
+      "left": {
+        "type": "split",
+        "feature": 3,
+        "threshold": 0.55,
+        "left": {
+          "type": "leaf",
+          "prob": 0.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 4.07,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 10.18,
+            "left": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 6.83,
+              "left": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 60.25,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.625
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 5.905,
+        "left": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 60.2,
+          "left": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 5.87,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.1565,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.1525,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.122
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.7143
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.241,
+              "left": {
+                "type": "leaf",
+                "prob": 0.7
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 6.225,
+          "left": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 6.39,
+            "left": {
+              "type": "leaf",
+              "prob": 0.0
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.2
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 0.0
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 1,
+      "threshold": 0.59,
+      "left": {
+        "type": "leaf",
+        "prob": 0.0
+      },
+      "right": {
+        "type": "split",
+        "feature": 3,
+        "threshold": 19.85,
+        "left": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 10.305,
+          "left": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.1455,
+            "left": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 6.4,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.1295,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.9669
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.5385
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.1315,
+          "left": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 3.955,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.0665,
+              "left": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 23.3,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.9259
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.9867
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 10.165,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.4902
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 60.2,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 3.995,
+              "left": {
+                "type": "leaf",
+                "prob": 0.6923
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.44,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0667
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 3,
+      "threshold": 20.35,
+      "left": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.148,
+        "left": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.0255,
+          "left": {
+            "type": "leaf",
+            "prob": 0.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 10.01,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 6.25,
+              "left": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 6.0,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.7959
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0833
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 0.0
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 4.005,
+        "left": {
+          "type": "leaf",
+          "prob": 1.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 10.245,
+          "left": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 6.665,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.0895,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.0675,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.9658
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.7742
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 67.8,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.088
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 3,
+      "threshold": 20.15,
+      "left": {
+        "type": "split",
+        "feature": 0,
+        "threshold": 10.48,
+        "left": {
+          "type": "split",
+          "feature": 4,
+          "threshold": 4.5,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 10.15,
+            "left": {
+              "type": "leaf",
+              "prob": 0.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 3.925,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 5.95,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0789
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.148,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.03,
+              "left": {
+                "type": "leaf",
+                "prob": 0.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.225,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.8958
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.1429
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 3.945,
+        "left": {
+          "type": "leaf",
+          "prob": 1.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.1305,
+          "left": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 10.18,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.0875,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.69,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.8938
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.11,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.037
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.625
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 66.9,
+            "left": {
+              "type": "split",
+              "feature": 4,
+              "threshold": 9.5,
+              "left": {
+                "type": "leaf",
+                "prob": 0.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.158,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.3143
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 3,
+      "threshold": 19.95,
+      "left": {
+        "type": "split",
+        "feature": 0,
+        "threshold": 10.48,
+        "left": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 11.75,
+          "left": {
+            "type": "split",
+            "feature": 4,
+            "threshold": 4.5,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 10.15,
+              "left": {
+                "type": "leaf",
+                "prob": 0.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 11.05,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.4375
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0625
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.1075,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 6.22,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 4.915,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.8
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.5
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.148,
+              "left": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 17.6,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.75
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 3,
+        "threshold": 59.95,
+        "left": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 3.925,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 4,
+            "threshold": 4.5,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 10.245,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.088,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.7133
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0503
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 1,
+      "threshold": 0.59,
+      "left": {
+        "type": "leaf",
+        "prob": 0.0
+      },
+      "right": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.1325,
+        "left": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 4.015,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 15.2,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.0595,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 10.085,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.6042
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 60.2,
+          "left": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 4.925,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 28.9,
+              "left": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 15.95,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0263
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 3.995,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.6667
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 4.935,
+              "left": {
+                "type": "leaf",
+                "prob": 0.5
+              },
+              "right": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 4.77,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.2857
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0116
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 1,
+      "threshold": 0.59,
+      "left": {
+        "type": "leaf",
+        "prob": 0.0
+      },
+      "right": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.1315,
+        "left": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 4.025,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 10.18,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.0875,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.565,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.8961
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0968
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.1195,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.1294
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.7586
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 60.2,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 32.45,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 15.95,
+              "left": {
+                "type": "leaf",
+                "prob": 0.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.1455,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.1739
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 32.85,
+              "left": {
+                "type": "leaf",
+                "prob": 0.625
+              },
+              "right": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.225,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0806
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 2,
+      "threshold": 0.1375,
+      "left": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 0.59,
+        "left": {
+          "type": "leaf",
+          "prob": 0.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 4.07,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 10.165,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 6.52,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.0875,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.9264
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.4643
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.69,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.4286
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 3,
+        "threshold": 60.2,
+        "left": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 28.95,
+          "left": {
+            "type": "split",
+            "feature": 4,
+            "threshold": 16.5,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.1435,
+              "left": {
+                "type": "leaf",
+                "prob": 0.25
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 15.95,
+              "left": {
+                "type": "leaf",
+                "prob": 0.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.161,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.5714
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 40.95,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.1585,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 5.185,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.7692
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0714
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.1405,
+              "left": {
+                "type": "leaf",
+                "prob": 0.2857
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 0,
+      "threshold": 0.595,
+      "left": {
+        "type": "leaf",
+        "prob": 0.0
+      },
+      "right": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.1305,
+        "left": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 4.025,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.0615,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 10.05,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.44,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.875
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 10.01,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.51,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.7321
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.16,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 66.45,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 3.85,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.265,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.3167
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 0.0
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 2,
+      "threshold": 0.1315,
+      "left": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 0.59,
+        "left": {
+          "type": "leaf",
+          "prob": 0.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 4.265,
+          "left": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 4.0,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 4.055,
+              "left": {
+                "type": "leaf",
+                "prob": 0.75
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 10.18,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.0875,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.69,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.8685
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 60.25,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.1505
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 3,
+        "threshold": 60.2,
+        "left": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 28.95,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 15.95,
+            "left": {
+              "type": "leaf",
+              "prob": 0.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 16.05,
+              "left": {
+                "type": "leaf",
+                "prob": 0.25
+              },
+              "right": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 3.5,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.1143
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0035
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.1585,
+            "left": {
+              "type": "split",
+              "feature": 4,
+              "threshold": 9.5,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 4.255,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.1667
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0238
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 15.5,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.087
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 3,
+      "threshold": 19.85,
+      "left": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 10.285,
+        "left": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 12.35,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 10.75,
+            "left": {
+              "type": "leaf",
+              "prob": 0.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 3.77,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 4.145,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.12,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.22,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.9524
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.4
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 17.25,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0216
+                }
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.136,
+        "left": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 4.07,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 10.18,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 60.3,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.0685,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.8861
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.2552
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 3.73,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 6.225,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 67.8,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.1595,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.3404
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 2,
+      "threshold": 0.1605,
+      "left": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 0.59,
+        "left": {
+          "type": "leaf",
+          "prob": 0.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 59.95,
+          "left": {
+            "type": "split",
+            "feature": 4,
+            "threshold": 4.5,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.1315,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 10.165,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.7642
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 8.5,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0556
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.3115
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        }
+      },
+      "right": {
+        "type": "leaf",
+        "prob": 0.0
+      }
+    },
+    {
+      "type": "split",
+      "feature": 1,
+      "threshold": 0.59,
+      "left": {
+        "type": "leaf",
+        "prob": 0.0
+      },
+      "right": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 10.245,
+        "left": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.0905,
+          "left": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 6.755,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 6.515,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.0825,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.9922
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.9438
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.58,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.1667
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.6
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 60.2,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 15.95,
+              "left": {
+                "type": "leaf",
+                "prob": 0.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 3.795,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0605
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 3,
+      "threshold": 20.1,
+      "left": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 10.29,
+        "left": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 0.62,
+          "left": {
+            "type": "leaf",
+            "prob": 0.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.1085,
+            "left": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 6.11,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 4.8,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.9091
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.25
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.1465,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.905,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.25
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 4.06,
+        "left": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 4.005,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 4.035,
+            "left": {
+              "type": "leaf",
+              "prob": 0.7143
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.9091
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.136,
+          "left": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 10.055,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 59.25,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.0685,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.8901
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.2289
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 8.5,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.9661
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 5.745,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 67.8,
+              "left": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 41.05,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.1746
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 6.225,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.3,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.4
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 3,
+      "threshold": 19.85,
+      "left": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 10.29,
+        "left": {
+          "type": "split",
+          "feature": 4,
+          "threshold": 4.5,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 10.75,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 10.15,
+              "left": {
+                "type": "leaf",
+                "prob": 0.0
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.2727
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 3.995,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 15.55,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.2188
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 17.65,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.1455,
+              "left": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 15.35,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.7778
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.1295,
+              "left": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 9.5,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.8333
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 3,
+        "threshold": 59.95,
+        "left": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.1315,
+          "left": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.0865,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.0595,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 4.5,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.9019
+                }
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 10.035,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 4.165,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.9778
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0789
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.1585,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 5.145,
+              "left": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 8.5,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.52
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.1405,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.2143
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 1,
+      "threshold": 0.595,
+      "left": {
+        "type": "leaf",
+        "prob": 0.0
+      },
+      "right": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.1355,
+        "left": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 4.005,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.0605,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 10.165,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.61,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.7347
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0137
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 60.2,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 15.95,
+            "left": {
+              "type": "leaf",
+              "prob": 0.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.1455,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.515,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.5417
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 4.08,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.2857
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0019
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 3,
+      "threshold": 19.95,
+      "left": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 10.29,
+        "left": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 10.75,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 10.15,
+            "left": {
+              "type": "leaf",
+              "prob": 0.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 10.35,
+              "left": {
+                "type": "leaf",
+                "prob": 0.3333
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 4,
+            "threshold": 4.5,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 3.975,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 5.225,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.25
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 4.22,
+              "left": {
+                "type": "leaf",
+                "prob": 0.9
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.515,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0887
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.1315,
+        "left": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 4.07,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 10.18,
+            "left": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 6.505,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.0875,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.9585
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.3818
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.675,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.3571
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 3.645,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.1605,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 66.5,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.26,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.3091
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 2,
+      "threshold": 0.1325,
+      "left": {
+        "type": "split",
+        "feature": 3,
+        "threshold": 0.55,
+        "left": {
+          "type": "leaf",
+          "prob": 0.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.0885,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 56.25,
+            "left": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 3.955,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 10.215,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.7342
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 10.18,
+            "left": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 4.725,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 3.795,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.6364
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.32,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.3455
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.1605,
+        "left": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 3.745,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 5.975,
+            "left": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 4.68,
+              "left": {
+                "type": "leaf",
+                "prob": 0.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 5.19,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.7778
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.4783
+                }
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.141,
+              "left": {
+                "type": "leaf",
+                "prob": 0.2
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 0.0
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 2,
+      "threshold": 0.1605,
+      "left": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 0.59,
+        "left": {
+          "type": "leaf",
+          "prob": 0.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.1305,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 59.95,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 4.05,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 10.18,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.531
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 59.8,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 3.85,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.44,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.25
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "leaf",
+        "prob": 0.0
+      }
+    },
+    {
+      "type": "split",
+      "feature": 2,
+      "threshold": 0.1355,
+      "left": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.025,
+        "left": {
+          "type": "leaf",
+          "prob": 0.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 4.005,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 10.18,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 6.675,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.275,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.7893
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.5556
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.161,
+        "left": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 3.91,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 4,
+            "threshold": 5.5,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 37.95,
+              "left": {
+                "type": "leaf",
+                "prob": 0.25
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.7273
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 58.65,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.315,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.1346
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.8333
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 0.0
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 2,
+      "threshold": 0.1605,
+      "left": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 0.59,
+        "left": {
+          "type": "leaf",
+          "prob": 0.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.132,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 59.95,
+            "left": {
+              "type": "split",
+              "feature": 4,
+              "threshold": 4.5,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 9.99,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.7949
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 3.85,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 4,
+              "threshold": 4.5,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 9.5,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0732
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.4048
+                }
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "leaf",
+        "prob": 0.0
+      }
+    },
+    {
+      "type": "split",
+      "feature": 3,
+      "threshold": 19.95,
+      "left": {
+        "type": "split",
+        "feature": 0,
+        "threshold": 10.48,
+        "left": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 10.75,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 10.15,
+            "left": {
+              "type": "leaf",
+              "prob": 0.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 4.685,
+              "left": {
+                "type": "leaf",
+                "prob": 0.4
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.1075,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.0925,
+              "left": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 14.5,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.993
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.75
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.5
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.1455,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 5.975,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.7273
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 3.965,
+        "left": {
+          "type": "leaf",
+          "prob": 1.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 10.22,
+          "left": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.088,
+            "left": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 6.83,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.0645,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.9936
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.8983
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 60.2,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.225,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.1101
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 1,
+      "threshold": 0.59,
+      "left": {
+        "type": "leaf",
+        "prob": 0.0
+      },
+      "right": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.132,
+        "left": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 4.11,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 10.11,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 60.3,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.515,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.6872
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0417
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.1605,
+          "left": {
+            "type": "split",
+            "feature": 4,
+            "threshold": 4.5,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 3.815,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 57.65,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0989
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.7857
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 0.0
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 3,
+      "threshold": 19.85,
+      "left": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 10.285,
+        "left": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 0.605,
+          "left": {
+            "type": "leaf",
+            "prob": 0.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.1075,
+            "left": {
+              "type": "split",
+              "feature": 4,
+              "threshold": 18.0,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 5.23,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.9333
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.6667
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.1465,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.05,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.75
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.1315,
+        "left": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 3.955,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 9.99,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 6.69,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.09,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.8846
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.3846
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 60.2,
+          "left": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 3.98,
+            "left": {
+              "type": "leaf",
+              "prob": 0.6667
+            },
+            "right": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 6.225,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.1585,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.1579
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 3,
+      "threshold": 20.15,
+      "left": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.1315,
+        "left": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.0255,
+          "left": {
+            "type": "leaf",
+            "prob": 0.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 9.425,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 6.225,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 4.86,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.7857
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.3571
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 4,
+          "threshold": 16.5,
+          "left": {
+            "type": "leaf",
+            "prob": 0.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 3.655,
+            "left": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 3.615,
+              "left": {
+                "type": "leaf",
+                "prob": 0.0
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.25
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 4.045,
+        "left": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 20.85,
+          "left": {
+            "type": "leaf",
+            "prob": 0.75
+          },
+          "right": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 4.005,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.9091
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 10.18,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 60.3,
+            "left": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 6.505,
+              "left": {
+                "type": "split",
+                "feature": 4,
+                "threshold": 4.5,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.3053
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.0695,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.4
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 0,
+      "threshold": 0.595,
+      "left": {
+        "type": "leaf",
+        "prob": 0.0
+      },
+      "right": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.1605,
+        "left": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 59.65,
+          "left": {
+            "type": "split",
+            "feature": 4,
+            "threshold": 4.5,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 10.175,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 4.005,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.4448
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 0.0
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 0,
+      "threshold": 0.595,
+      "left": {
+        "type": "leaf",
+        "prob": 0.0
+      },
+      "right": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.1315,
+        "left": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 3.955,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 10.185,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.0865,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.755,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.9119
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 68.15,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.1456
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 60.2,
+          "left": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 4.925,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.154,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.15,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.6
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.1445,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.355,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.4444
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 4.935,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.2
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0022
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 2,
+      "threshold": 0.1425,
+      "left": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 0.59,
+        "left": {
+          "type": "leaf",
+          "prob": 0.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 4.07,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 10.18,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 6.675,
+              "left": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 58.35,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.6723
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.9922
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 0,
+        "threshold": 6.19,
+        "left": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 60.2,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 28.85,
+            "left": {
+              "type": "split",
+              "feature": 4,
+              "threshold": 16.5,
+              "left": {
+                "type": "leaf",
+                "prob": 0.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.1715,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.25
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.16,
+              "left": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 41.2,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.5263
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 0.0
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 3,
+      "threshold": 19.15,
+      "left": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 10.285,
+        "left": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 10.75,
+          "left": {
+            "type": "split",
+            "feature": 4,
+            "threshold": 3.5,
+            "left": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 2.225,
+              "left": {
+                "type": "leaf",
+                "prob": 0.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.2375,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.4
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 4.25,
+            "left": {
+              "type": "split",
+              "feature": 4,
+              "threshold": 4.5,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.9333
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.1085,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.225,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.9545
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 17.25,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0103
+                }
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.132,
+        "left": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 4.025,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 4,
+            "threshold": 19.5,
+            "left": {
+              "type": "split",
+              "feature": 4,
+              "threshold": 15.5,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 9.96,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.7806
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 10.525,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.4731
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 66.9,
+          "left": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 6.425,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 57.75,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 4.025,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.4
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0526
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.4286
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 3,
+      "threshold": 19.95,
+      "left": {
+        "type": "split",
+        "feature": 0,
+        "threshold": 10.43,
+        "left": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 10.15,
+          "left": {
+            "type": "leaf",
+            "prob": 0.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.1465,
+            "left": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 6.515,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 4.725,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.8
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 3.945,
+        "left": {
+          "type": "leaf",
+          "prob": 1.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 10.26,
+          "left": {
+            "type": "split",
+            "feature": 1,
+            "threshold": 6.675,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 60.3,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.275,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.3407
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.1481
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 2,
+      "threshold": 0.1605,
+      "left": {
+        "type": "split",
+        "feature": 0,
+        "threshold": 0.595,
+        "left": {
+          "type": "leaf",
+          "prob": 0.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 3,
+          "threshold": 59.95,
+          "left": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.1315,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.0875,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 4.02,
+                "left": {
+                  "type": "leaf",
+                  "prob": 1.0
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.9403
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 10.22,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.4576
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 4,
+              "threshold": 9.5,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.265,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.2188
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.1425,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.1667
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.5
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 1.0
+          }
+        }
+      },
+      "right": {
+        "type": "leaf",
+        "prob": 0.0
+      }
+    },
+    {
+      "type": "split",
+      "feature": 2,
+      "threshold": 0.1605,
+      "left": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.025,
+        "left": {
+          "type": "leaf",
+          "prob": 0.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 3.955,
+          "left": {
+            "type": "leaf",
+            "prob": 1.0
+          },
+          "right": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 15.15,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 10.23,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.795,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.7412
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "leaf",
+        "prob": 0.0
+      }
+    },
+    {
+      "type": "split",
+      "feature": 1,
+      "threshold": 0.59,
+      "left": {
+        "type": "leaf",
+        "prob": 0.0
+      },
+      "right": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.1315,
+        "left": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 4.205,
+          "left": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.122,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.9
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 10.18,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.0875,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.0615,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.9821
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.7314
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 68.0,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.1494
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 1.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 2,
+          "threshold": 0.1605,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 59.8,
+            "left": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 4.01,
+              "left": {
+                "type": "leaf",
+                "prob": 0.8571
+              },
+              "right": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 18.7,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.5
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.086
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "prob": 0.0
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 2,
+      "threshold": 0.132,
+      "left": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.025,
+        "left": {
+          "type": "leaf",
+          "prob": 0.0
+        },
+        "right": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 4.205,
+          "left": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.1205,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.8
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 10.11,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.0875,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.835,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.9221
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.32,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.4068
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "split",
+        "feature": 0,
+        "threshold": 4.695,
+        "left": {
+          "type": "split",
+          "feature": 4,
+          "threshold": 15.5,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 56.45,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 40.45,
+              "left": {
+                "type": "leaf",
+                "prob": 0.0
+              },
+              "right": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 4.045,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.25
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.2
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.16,
+            "left": {
+              "type": "leaf",
+              "prob": 0.7
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 4.985,
+          "left": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.1595,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.146,
+              "left": {
+                "type": "leaf",
+                "prob": 0.125
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 6.225,
+            "left": {
+              "type": "split",
+              "feature": 2,
+              "threshold": 0.1605,
+              "left": {
+                "type": "split",
+                "feature": 3,
+                "threshold": 54.8,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.2581
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.8571
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 1,
+      "threshold": 0.59,
+      "left": {
+        "type": "leaf",
+        "prob": 0.0
+      },
+      "right": {
+        "type": "split",
+        "feature": 0,
+        "threshold": 10.4,
+        "left": {
+          "type": "split",
+          "feature": 1,
+          "threshold": 3.695,
+          "left": {
+            "type": "split",
+            "feature": 4,
+            "threshold": 4.5,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 9.05,
+              "left": {
+                "type": "leaf",
+                "prob": 0.0
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 12.0,
+              "left": {
+                "type": "leaf",
+                "prob": 0.0
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 6.345,
+            "left": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 5.875,
+              "left": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.1315,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.8723
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0257
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 2,
+                "threshold": 0.161,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.8723
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 59.45,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 6.475,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.1311
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0016
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.8333
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 1,
+      "threshold": 0.59,
+      "left": {
+        "type": "leaf",
+        "prob": 0.0
+      },
+      "right": {
+        "type": "split",
+        "feature": 1,
+        "threshold": 10.245,
+        "left": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 3.695,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 9.05,
+            "left": {
+              "type": "leaf",
+              "prob": 0.0
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 0,
+            "threshold": 6.315,
+            "left": {
+              "type": "split",
+              "feature": 1,
+              "threshold": 4.905,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 3.825,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.3363
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.1956
+                }
+              },
+              "right": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 4.74,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.8182
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.3166
+                }
+              }
+            },
+            "right": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 59.6,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.535,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.0897
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0018
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.8
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "prob": 1.0
+        }
+      }
+    },
+    {
+      "type": "split",
+      "feature": 0,
+      "threshold": 0.595,
+      "left": {
+        "type": "leaf",
+        "prob": 0.0
+      },
+      "right": {
+        "type": "split",
+        "feature": 2,
+        "threshold": 0.1315,
+        "left": {
+          "type": "split",
+          "feature": 0,
+          "threshold": 4.205,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 50.55,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 50.0,
+              "left": {
+                "type": "leaf",
+                "prob": 1.0
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 0.9091
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 1.0
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 15.05,
+            "left": {
+              "type": "leaf",
+              "prob": 1.0
+            },
+            "right": {
+              "type": "split",
+              "feature": 0,
+              "threshold": 10.11,
+              "left": {
+                "type": "split",
+                "feature": 1,
+                "threshold": 6.725,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.8012
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "feature": 4,
+          "threshold": 0.5,
+          "left": {
+            "type": "split",
+            "feature": 3,
+            "threshold": 17.75,
+            "left": {
+              "type": "leaf",
+              "prob": 0.0
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.5294
+            }
+          },
+          "right": {
+            "type": "split",
+            "feature": 2,
+            "threshold": 0.1605,
+            "left": {
+              "type": "split",
+              "feature": 3,
+              "threshold": 59.8,
+              "left": {
+                "type": "split",
+                "feature": 0,
+                "threshold": 5.265,
+                "left": {
+                  "type": "leaf",
+                  "prob": 0.4054
+                },
+                "right": {
+                  "type": "leaf",
+                  "prob": 0.0854
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "prob": 1.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "prob": 0.0
+            }
+          }
+        }
+      }
+    }
+  ]
+}

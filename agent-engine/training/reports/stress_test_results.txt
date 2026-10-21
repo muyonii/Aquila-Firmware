@@ -1,0 +1,13 @@
+======================================================================
+AQUILA ML RESEARCH — SENSOR NOISE & STRESS TEST REPORT
+======================================================================
+Operating Decision Threshold (tau): 0.4
+Evaluated Noise Levels             : 0%, 5%, 10%, 20%, 30%
+
+PERFORMANCE DEGRADATION TABLE:
+  Noise  0% | Acc: 100.00% | Prec: 100.00% | Rec: 100.00% | F1: 100.00% | AUC: 1.0000
+  Noise  5% | Acc: 99.60% | Prec: 99.46% | Rec: 98.93% | F1: 99.20% | AUC: 1.0000
+  Noise 10% | Acc: 98.67% | Prec: 96.10% | Rec: 98.67% | F1: 97.37% | AUC: 0.9994
+  Noise 20% | Acc: 94.07% | Prec: 82.35% | Rec: 97.07% | F1: 89.11% | AUC: 0.9944
+  Noise 30% | Acc: 90.20% | Prec: 73.46% | Rec: 95.20% | F1: 82.93% | AUC: 0.9821
+======================================================================

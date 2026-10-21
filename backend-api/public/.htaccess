@@ -1,0 +1,31 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # CRITICAL FOR XAMPP ON WINDOWS: Force Apache to pass Authorization header
+    CGIPassAuth On
+    SetEnvIfNoCase Authorization "(.+)" HTTP_AUTHORIZATION=$1
+    SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+
+    # Pass Authorization and custom headers through Apache environment
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    RewriteCond %{HTTP:X-Aquila-Timestamp} .
+    RewriteRule .* - [E=HTTP_X_AQUILA_TIMESTAMP:%{HTTP:X-Aquila-Timestamp}]
+
+    RewriteCond %{HTTP:X-Aquila-Signature} .
+    RewriteRule .* - [E=HTTP_X_AQUILA_SIGNATURE:%{HTTP:X-Aquila-Signature}]
+
+    RewriteCond %{HTTP:X-Aquila-Internal-Key} .
+    RewriteRule .* - [E=HTTP_X_AQUILA_INTERNAL_KEY:%{HTTP:X-Aquila-Internal-Key}]
+
+    # Redirect Trailing Slashes...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Front Controller Routing
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>

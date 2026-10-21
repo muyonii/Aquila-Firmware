@@ -1,0 +1,17 @@
+{
+  "name": "aquila-simulation-harness",
+  "version": "2.2.0",
+  "description": "Full-spectrum hydraulic simulation harness and scenario driver for AQUILA Smart Water System",
+  "type": "module",
+  "main": "feeder.js",
+  "scripts": {
+    "start": "node feeder.js",
+    "test": "node --test tests/**/*.test.js",
+    "scenario:baseline": "node feeder.js --scenario=BASELINE_NORMAL",
+    "scenario:leak": "node feeder.js --scenario=CRITICAL_LEAK",
+    "scenario:shortage": "node feeder.js --scenario=EQUITY_DEFICIT",
+    "scenario:cascade": "node feeder.js --scenario=CASCADE_BR06",
+    "scenario:drought": "node feeder.js --scenario=DROUGHT_BR05"
+  },
+  "dependencies": {}
+}

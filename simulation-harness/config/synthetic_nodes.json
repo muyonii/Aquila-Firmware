@@ -1,0 +1,83 @@
+[
+  {
+    "node_id": "NODE-B1-001",
+    "household_label": "Household 01 (Physical Testbed)",
+    "location_name": "Lot 14 Blk 2, Bougainvillea St., Purok 2",
+    "purok_cluster": "Purok 2",
+    "parent_node_id": null,
+    "is_physical": true,
+    "coordinates": { "lat": 14.6778, "lng": 120.5412 }
+  },
+  {
+    "node_id": "NODE-B1-002",
+    "household_label": "Household 02 (Santos Family)",
+    "location_name": "Lot 18 Blk 2, Rosal Ext., Purok 2",
+    "purok_cluster": "Purok 2",
+    "parent_node_id": "NODE-B1-001",
+    "is_physical": false,
+    "coordinates": { "lat": 14.6772, "lng": 120.5422 }
+  },
+  {
+    "node_id": "NODE-B1-003",
+    "household_label": "Household 03 (Reyes Family)",
+    "location_name": "Corner Sampaguita St. & Main Road, Purok 2",
+    "purok_cluster": "Purok 2",
+    "parent_node_id": "NODE-B1-001",
+    "is_physical": false,
+    "coordinates": { "lat": 14.6766, "lng": 120.5415 }
+  },
+  {
+    "node_id": "NODE-B1-004",
+    "household_label": "Household 04 (Cruz Family)",
+    "location_name": "Purok 2 Water Terminal Near Daycare",
+    "purok_cluster": "Purok 2",
+    "parent_node_id": "NODE-B1-002",
+    "is_physical": false,
+    "coordinates": { "lat": 14.6761, "lng": 120.5430 }
+  },
+  {
+    "node_id": "NODE-B1-005",
+    "household_label": "Household 05 (Bautista Family)",
+    "location_name": "Blk 5 Lot 9, Ilang-Ilang Lane, Purok 2",
+    "purok_cluster": "Purok 2",
+    "parent_node_id": "NODE-B1-002",
+    "is_physical": false,
+    "coordinates": { "lat": 14.6769, "lng": 120.5436 }
+  },
+  {
+    "node_id": "NODE-B1-006",
+    "household_label": "Household 06 (Mendoza Family)",
+    "location_name": "Sitio Riverside Tap 1, Purok 2",
+    "purok_cluster": "Purok 2",
+    "parent_node_id": "NODE-B1-003",
+    "is_physical": false,
+    "coordinates": { "lat": 14.6756, "lng": 120.5411 }
+  },
+  {
+    "node_id": "NODE-B1-007",
+    "household_label": "Household 07 (Garcia Family)",
+    "location_name": "Sitio Riverside Tap 2, Purok 2",
+    "purok_cluster": "Purok 2",
+    "parent_node_id": "NODE-B1-003",
+    "is_physical": false,
+    "coordinates": { "lat": 14.6750, "lng": 120.5421 }
+  },
+  {
+    "node_id": "NODE-B1-008",
+    "household_label": "Household 08 (Navarro Family)",
+    "location_name": "Elevated Ridge Zone A, Purok 2",
+    "purok_cluster": "Purok 2",
+    "parent_node_id": "NODE-B1-004",
+    "is_physical": false,
+    "coordinates": { "lat": 14.6754, "lng": 120.5442 }
+  },
+  {
+    "node_id": "NODE-B1-009",
+    "household_label": "Household 09 (Elevated Terminal)",
+    "location_name": "Elevated Ridge Zone B Terminal, Purok 2",
+    "purok_cluster": "Purok 2",
+    "parent_node_id": "NODE-B1-004",
+    "is_physical": false,
+    "coordinates": { "lat": 14.6748, "lng": 120.5452 }
+  }
+]

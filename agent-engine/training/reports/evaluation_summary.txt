@@ -1,0 +1,25 @@
+======================================================================
+AQUILA LEAK DETECTION MODEL (CMP-LDA-01) EVALUATION REPORT
+======================================================================
+Model Architecture   : Random Forest Classifier (50 Trees)
+Model Binary Source  : models/leak_rf_model.joblib
+Unseen Test Samples  : 1500
+Operating Threshold  : 0.4 (Neyman-Pearson Recall-Prioritized)
+ROC-AUC Score        : 0.9994
+Average Precision AP : 0.9982
+
+CONFUSION MATRIX:
+  True Normal  (TN) : 1089 | False Alarms (FP) :   36
+  Missed Leaks (FN) :    2 | True Leaks   (TP) :  373
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+  Normal (0)     0.9982    0.9680    0.9829      1125
+    Leak (1)     0.9120    0.9947    0.9515       375
+
+    accuracy                         0.9747      1500
+   macro avg     0.9551    0.9813    0.9672      1500
+weighted avg     0.9766    0.9747    0.9750      1500
+
+======================================================================

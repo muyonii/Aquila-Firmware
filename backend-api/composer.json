@@ -1,0 +1,14 @@
+{
+    "name": "aquila/backend-api",
+    "description": "AQUILA Cold Transactional REST API & Governance Tier",
+    "type": "project",
+    "require": {
+        "php": ">=8.2",
+        "firebase/php-jwt": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aquila\\": "src/"
+        }
+    }
+}

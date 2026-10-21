@@ -1,0 +1,11 @@
+{
+  "NODE-B1-001": { "expected_night_flow_lpm": 0.02, "typical_max_duration_mins": 12.0, "mean_daily_volume_liters": 310.0 },
+  "NODE-B1-002": { "expected_night_flow_lpm": 0.05, "typical_max_duration_mins": 15.0, "mean_daily_volume_liters": 420.0 },
+  "NODE-B1-003": { "expected_night_flow_lpm": 0.01, "typical_max_duration_mins": 10.0, "mean_daily_volume_liters": 290.0 },
+  "NODE-B1-004": { "expected_night_flow_lpm": 0.03, "typical_max_duration_mins": 18.0, "mean_daily_volume_liters": 380.0 },
+  "NODE-B1-005": { "expected_night_flow_lpm": 0.02, "typical_max_duration_mins": 14.0, "mean_daily_volume_liters": 340.0 },
+  "NODE-B1-006": { "expected_night_flow_lpm": 0.04, "typical_max_duration_mins": 16.0, "mean_daily_volume_liters": 410.0 },
+  "NODE-B1-007": { "expected_night_flow_lpm": 0.01, "typical_max_duration_mins": 12.0, "mean_daily_volume_liters": 300.0 },
+  "NODE-B1-008": { "expected_night_flow_lpm": 0.02, "typical_max_duration_mins": 15.0, "mean_daily_volume_liters": 350.0 },
+  "NODE-B1-009": { "expected_night_flow_lpm": 0.05, "typical_max_duration_mins": 20.0, "mean_daily_volume_liters": 450.0 }
+}

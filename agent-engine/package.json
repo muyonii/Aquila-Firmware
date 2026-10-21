@@ -1,0 +1,10 @@
+{
+  "name": "aquila-agent-engine",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "engine.js",
+  "scripts": {
+    "start": "node engine.js",
+    "test": "node --test"
+  }
+}
