@@ -1,51 +1,46 @@
 #ifndef FLOW_SENSOR_H
 #define FLOW_SENSOR_H
-
 #include <Arduino.h>
 #include <Preferences.h>
-#include "interfaces/ISensor.h"
+#include "ISensor.h"
 #include "config.h"
 
-/**
- * Implements ISensor. Hides hardware interrupts, spinlocks, and NVS wear management.
- */
 class FlowSensor : public ISensor {
 public:
     explicit FlowSensor(uint8_t sensorPin, float calibrationFactor, float pulsesPerLiter);
     ~FlowSensor() override = default;
 
-    // ISensor interface overrides
     bool begin() override;
-    float read() override; // Returns flow velocity in Liters/Minute (LPM)
+    float read() override;      // Liters/Minute
     bool isHealthy() override;
 
-    // Flow-specific domain methods
     float getCumulativeLiters() const;
     void resetOdometer();
 
-    // Static Interrupt Service Routine (Must reside in IRAM)
+    // Calibration (persisted in NVS)
+    float getPulsesPerLiter() const;
+    bool setPulsesPerLiter(float ppl);       // false if outside 50..5000
+    uint32_t getTestPulses() const;          // free-running counter for calibration pours
+    void resetTestPulses();
+
     static void IRAM_ATTR onPulseInterrupt();
 
 private:
     uint8_t pin;
     float calFactor;
     float pulsesPerLiter;
-    
-    // Encapsulated state
     float cumulativeLiters;
     float lastCommittedLiters;
     unsigned long lastMeasurementTime;
 
-    // Thread-safe interrupt properties
     static volatile uint32_t pulseCount;
+    static volatile uint32_t testPulses;
+    static volatile uint32_t lastPulseUs;
     static portMUX_TYPE spinlock;
 
-    // Non-Volatile Storage (Preferences.h)
     Preferences nvs;
-
-    // Encapsulated NVS storage helpers
     void commitOdometerToNVS(float liters);
     float loadOdometerFromNVS();
+    float loadPulsesPerLiterFromNVS(float fallback);
 };
-
-#endif // FLOW_SENSOR_H
+#endif
